@@ -1,0 +1,20 @@
+.carousel-caption{
+	top: 20px;
+}
+
+.bg-imgGrisNoir{
+	background-image:url('/isset/fondGrisNoir.jpg');
+}
+
+.button-lr-rounded{
+	height: 40px;
+	border-radius:20px;
+}
+
+.full-width{
+	width: 100%;
+}
+
+#minicarousel{
+	width: 100%;
+}

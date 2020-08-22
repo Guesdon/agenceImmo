@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/isset/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Bootsrap Realestate</title>
+    </head>
+    <body class="bg-light m-0">
+        
+        <header>
+            <nav class="navbar justify-content-end navbar-dark bg-dark py-0 pr-5">
+                <div class="btn-group btn-group-toggle pr-5 mr-5" data-toggle="buttons">
+                    <label class="btn btn-dark active btn-sm">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> HOME
+                    </label>
+                    <label class="btn btn-dark btn-sm">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> ABOUT
+                    </label>
+                    <label class="btn btn-dark btn-sm">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> AGENTS
+                    </label>
+                    <label class="btn btn-dark btn-sm">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> BLOG
+                    </label>
+                    <label class="btn btn-dark btn-sm">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> CONTACT
+                    </label>
+                  </div>
+            </nav>
+
+            <nav class="navbar py-0 mx-5 px-5 bg-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand py-0" id="homeLink" href="#"><img src="/isset/logo.png" alt="logo agence immobiliere"></a>
+                </div>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <button type="button" class="btn btn-outline-success btn-lg py-4 border-0">BUY</button>
+                    <button type="button" class="btn btn-outline-success btn-lg py-4 border-0">SALE</button>
+                    <button type="button" class="btn btn-outline-success btn-lg py-4 border-0">RENT</button>
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+            <section id="carousel" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/isset/carousel1.jpg" alt="">
+                        <div class="carousel-caption text-left col-12 col-xs-12 col-md-10 col-lg-4">
+                            <h3>2 Bed Rooms and 1 Dinning Room Aparment on Sale</h3>
+                            <p>1890 Sydney, Australia</p>
+                            <p><small>Until he extends the circle of his compassion to all living things, man will not himself find peace.</small></p>
+                            <button type="button" class="btn btn-success">$200 000</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/isset/carousel2.jpg" alt="">
+                        <div class="carousel-caption text-left col-12 col-xs-12 col-md-10 col-lg-4">
+                            <h3>2 Bed Rooms and 1 Dinning Room Aparment on Sale</h3>
+                            <p>1890 Sydney, Australia</p>
+                            <p><small>Until he extends the circle of his compassion to all living things, man will not himself find peace.</small></p>
+                            <button type="button" class="btn btn-success">$200 000</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/isset/carousel3.jpg" alt="">
+                        <div class="carousel-caption text-left col-12 col-xs-12 col-md-10 col-lg-4">
+                            <h3>2 Bed Rooms and 1 Dinning Room Aparment on Sale</h3>
+                            <p>1890 Sydney, Australia</p>
+                            <p><small>Until he extends the circle of his compassion to all living things, man will not himself find peace.</small></p>
+                            <button type="button" class="btn btn-success">$200 000</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-imgGrisNoir text-light py-3 px-5">
+                <div class="container-fluid px-5">
+                    <h5>Buy, Sale & Rent</h5>
+                    <div class="row">
+                        <form class="col-6" action="">
+                            <div class="form-row px-1">
+                                <input class="form-control my-2" type="text" placeholder="Search of Properties">
+                                <div class="col-3 pl-0 pr-3">
+                                    <select class="custom-select mt-2">
+                                        <option selected></option>
+                                        <option value="1" selected>Buy</option>
+                                        <option value="2">Sale</option>
+                                        <option value="3">Rent</option>
+                                    </select>
+                                </div>
+                                <div class="col-3 px-3 mt-2">
+                                    <select class="custom-select">
+                                        <option selected>Price</option>
+                                        <option value="1">&#60; 100 000</option>
+                                        <option value="2">100 000 - 200 000</option>
+                                        <option value="3">200 000-500 000</option>
+                                        <option value="3">&#62; 500 000</option>
+                                    </select>
+                                </div>
+                                <div class="col-3 px-3 mt-2">
+                                    <select class="custom-select">
+                                        <option selected>Property</option>
+                                        <option value="1">T1-F1</option>
+                                        <option value="2">T2-F2</option>
+                                        <option value="3">With Garden</option>
+                                    </select>
+                                </div>
+                                <div class="col-3 pl-3 pr-0 mt-2">
+                                    <button type="button" class="btn btn-success full-width">Find Now</button>
+                                </div>
+                            </div>
+
+                        </form>
+                        <div class="offset-1 col-5 my-2">
+                            <p><small>Join now and get updated with all properties deals</small></p>
+                            <button type="button" class="btn btn-outline-light button-lr-rounded mt-3">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid py-3">
+                <div class="row mx-5 px-3">
+                    <div class="col-12 row">
+                        <h3 class="col-10">Featured Properties</h3>
+                        <small class="col-2 text-right p-0 m-0"><a href=""class="text-success">View All Listing</a></small>
+                        <section id="carousel2" class="carousel slide col-12" data-ride="carousel2">
+                            <ul class="carousel-indicators">
+                                <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel2" data-slide-to="1"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class=" container-fluid carousel-item active">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house1.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house2.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house3.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house4.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house5.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house6.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class=" container-fluid carousel-item">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house1.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house2.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house3.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house4.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house5.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card my-4 border-0">
+                                                <img class="card-img-top" src="/isset/house6.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title text-success border-bottom border-secondary pb-3">Royal Inn</h5>
+                                                    <p class="card-text border-bottom border-secondary pb-3">Price: $234,900</p>
+                                                    <div class="text-center mb-3">
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">5</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">2</button>
+                                                        <button typer="button" class="btn btn-secondary rounded-circle py-0 px-2">1</button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success button-lr-rounded">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-6">
+                        <h5>About Us</h5>
+                        <p><small>The standart chunk of Lorem Ipsum used since the 1500s is reproduced below for these interested. 
+                        Sections 1.10.32 and 1.10.33 from "the Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+                        accompanied by English version from 1914 translation by H.Rackham.</small>
+                        </p>
+                        <a href="" class="text-success"><small>Learn More</small></a>
+
+                    </div>
+                    <div class="col-5 offset-1">
+                        <h5>Recommended Properties</h5>
+                        <div  id="carousel3" class="carousel slide pl-3">
+                            <div class="row">
+                                <section id="carousel" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class=" container-fluid  carousel-item active">
+                                            <div class="row">
+                                                <div class="col-5 py-2 px-0"><img id="minicarousel" src="/isset/house13.jpg" alt=""></div>
+                                                <div class="col-7">
+                                                    <p class="text-success">Integer sed porta quam</p>
+                                                    <p><small>$300,000</small></p>
+                                                    <button type="button" class="btn btn-dark rounded-0">MORE DETAIL</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" container-fluid  carousel-item">
+                                            <div class="row">
+                                                <div class="col-5 py-2 px-0"><img id="minicarousel" src="/isset/house12.jpg" alt=""></div>
+                                                <div class="col-7">
+                                                    <p class="text-success">Integer sed porta quam</p>
+                                                    <p><small>$300,000</small></p>
+                                                    <button type="button" class="btn btn-dark rounded-0">MORE DETAIL</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" container-fluid  carousel-item">
+                                            <div class="row">
+                                                <div class="col-5 py-2 px-0"><img id="minicarousel" src="/isset/house11.jpg" alt=""></div>
+                                                <div class="col-7">
+                                                    <p class="text-success">Integer sed porta quam</p>
+                                                    <p><small>$300,000</small></p>
+                                                    <button type="button" class="btn btn-dark rounded-0">MORE DETAIL</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+           
+        <footer class="container-fluid bg-imgGrisNoir px-5">
+            <div class="row p-5">
+                <div class="col-3 text-light">
+                    <h6>Information</h6>
+                    <hr class="border border-dark">
+                    <small>
+                        <a href="" class="text-success">About</a><br>
+                        <a href="" class="text-success">Agents</a><br>
+                        <a href="" class="text-success">Blog</a><br>
+                        <a href="" class="text-success">Contact</a>
+                    </small>
+                </div>
+                <div class="col-3 text-light">
+                    <h6>Newsletter</h6>
+                    <hr class="border border-dark">
+                    <p class="text-secondary"><small>Get notified about the latest properties in our marketplace</small></a><br>
+                    <form action="">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your email address">
+                        <button type="button" class="btn btn-success full-width mt-3">Notify Me!</button>
+                    </form>
+                </div>
+                <div class="col-3 text-light">
+                    <h6>Follow us</h6>
+                    <hr class="border border-dark">
+                    <a href=""><img src="/isset/facebook.png" alt=""></a>
+                    <a href=""><img src="/isset/twitter.png" alt=""></a>
+                    <a href=""><img src="/isset/linkedin.png" alt=""></a>
+                    <a href=""><img src="/isset/instagram.png" alt=""></a>
+                </div>
+                <div class="col-3 text-light">
+                    <h6>Contact us</h6>
+                    <hr class="border border-dark">
+                    <small>
+                        <p>Exercise Bootsrap.<br>
+                           <img src="/isset/localisation.png" alt="" class="intext">00 Boulevard Ville, Pays<br>
+                           <img src="/isset/email.png" alt="" class="intext">email@boite.extension
+                        </p>
+                        <a href=""><img src="/isset/phone.png" alt="" class="intext"><img src="/isset/skype.png" alt="" class="intext">(123)456-7890</a>
+                    </small>
+                </div>
+            </div>
+            <p class="text-light mb-0">© Copyright 2020. All Rights reserved Guesdon Julien</p>
+        </footer>
+        
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    <script>
+        $('.carousel').carousel({
+            interval: 2500
+        })
+    </script>
+</html>
